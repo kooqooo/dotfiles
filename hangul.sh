@@ -15,5 +15,5 @@ export LANG=ko_KR.UTF-8
 if [ -f ~/.zshrc ]; then
     echo -e "export LANGUAGE=ko_KR.UTF-8\nexport LANG=ko_KR.UTF-8" >> ~/.zshrc
 else
-    echo -e "export LANGUAGE=ko_KR.UTF-8\nexport LANG=ko_KR.UTF-8" >> ~/.bashrc"
+    echo -e "export LANGUAGE=ko_KR.UTF-8\nexport LANG=ko_KR.UTF-8" >> ~/.bashrc
 fi
