@@ -1,5 +1,5 @@
 # 패키지 설치
-sudo apt-get install language-pack-ko
+sudo apt install -y language-pack-ko
 
 # 로케일 설치
 sudo locale-gen ko_KR.UTF-8
