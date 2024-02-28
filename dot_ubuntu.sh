@@ -1,6 +1,6 @@
 #!/bin/bash
-EMAIL = "youremail@gmail.com"
-NAME = "kooqooo"
+EMAIL="youremail@gmail.com"
+NAME="kooqooo"
 
 # Basic Setting
 sudo apt update
