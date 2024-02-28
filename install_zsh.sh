@@ -1,4 +1,6 @@
 # Install zsh
+THEME="agnoster"
+# THEME="spaceshipe"
 sudo apt install -y zsh
 sudo chsh -s /bin/zsh "$USER"
 
@@ -18,7 +20,7 @@ if [ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt ]; then
 fi
 ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship.zsh-theme
 
-sed -i 's/robbyrussell/agnoster/g' ~/.zshrc
+sed -i 's/robbyrussell/$THEME/g' ~/.zshrc
 ORIGINAL="plugins=(git)"
 NEW="plugins=(git\n\t\ttmux\n\t\tzsh-autosuggestions\n\t\tzsh-syntax-highlighting)"
 bash -c sed -i ":a;N;\$!ba;s/$ORIGINAL/$NEW/g" ~/.zshrc
