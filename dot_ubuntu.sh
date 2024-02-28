@@ -1,12 +1,15 @@
+#!/bin/bash
+EMAIL = "youremail@gmail.com"
+NAME = "kooqooo"
+
 # Basic Setting
-sudo apt-get update
-sudo apt-get install -y vim curl awscli python3-pip tmux fonts-powerline git-lfs tree
+sudo apt update
+sudo apt install -y vim curl awscli python3-pip tmux fonts-powerline git-lfs tree
 sudo apt -y autoremove
-pip3 install -U pip
 
 # github profile
-git config --global user.email "your_email@example.com"
-git config --global user.name "your_name"
+git config --global user.email "$EMAIL"
+git config --global user.name "$NAME"
 
 # For save hugginface hub credential
 git config --global credential.helper store
