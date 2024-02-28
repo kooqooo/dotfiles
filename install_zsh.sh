@@ -1,6 +1,6 @@
 # Install zsh
 THEME="agnoster"
-# THEME="spaceshipe"
+# THEME="spaceship"
 sudo apt install -y zsh
 sudo chsh -s /bin/zsh "$USER"
 
