@@ -33,7 +33,7 @@ prompt_end() {
   fi
   echo -n "\n%{%F{\$CURRENT_BG}%}\$SEGMENT_SEPARATOR%{%f%}"
   CURRENT_BG=''
-}
+}\n
 EOF
 
 # add alias
