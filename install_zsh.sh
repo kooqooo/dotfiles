@@ -22,8 +22,8 @@ ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-t
 
 sed -i "s/robbyrussell/$THEME/g" ~/.zshrc
 ORIGINAL="plugins=(git)"
-NEW="plugins=(git\n\t\ttmux\n\t\tzsh-autosuggestions\n\t\tzsh-syntax-highlighting)"
-bash -c sed -i ":a;N;\$!ba;s/$ORIGINAL/$NEW/g" ~/.zshrc
+NEW="plugins=(git"$'\\\n\\t\\t'"tmux"$'\\\n\\t\\t'"zsh-autosuggestions"$'\\\n\\t\\t'"zsh-syntax-highlighting)"
+sed -i "s|$ORIGINAL|$NEW|g" ~/.zshrc
 
 cat << EOF >> ~/.zshrc
 
