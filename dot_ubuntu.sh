@@ -4,7 +4,7 @@ NAME="kooqooo"
 
 # Basic Setting
 sudo apt update
-sudo apt install -y vim curl awscli python3-pip tmux fonts-powerline git-lfs tree
+sudo apt install -y vim curl awscli tmux fonts-powerline git-lfs tree
 sudo apt -y autoremove
 
 # github profile
