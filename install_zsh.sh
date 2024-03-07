@@ -20,7 +20,7 @@ if [ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt ]; then
 fi
 ln -s ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship-prompt/spaceship.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/spaceship.zsh-theme
 
-sed -i 's/robbyrussell/$THEME/g' ~/.zshrc
+sed -i "s/robbyrussell/$THEME/g" ~/.zshrc
 ORIGINAL="plugins=(git)"
 NEW="plugins=(git\n\t\ttmux\n\t\tzsh-autosuggestions\n\t\tzsh-syntax-highlighting)"
 bash -c sed -i ":a;N;\$!ba;s/$ORIGINAL/$NEW/g" ~/.zshrc
@@ -35,7 +35,7 @@ prompt_end() {
   fi
   echo -n "\n%{%F{\$CURRENT_BG}%}\$SEGMENT_SEPARATOR%{%f%}"
   CURRENT_BG=''
-}\n
+}
 EOF
 
 # add alias
