@@ -42,6 +42,7 @@ EOF
 echo 'alias wa="watch -n .2 nvidia-smi"' >> ~/.zshrc
 echo 'alias vz="vim ~/.zshrc"' >> ~/.zshrc
 echo 'alias sz="source ~/.zshrc"' >> ~/.zshrc
+echo 'alias disk="du -h --max-depth=2 --threshold=10M 2>/dev/null / | sort -hr"' >> ~/.zshrc
 source ~/.zshrc
 
 # Copy .zshrc
