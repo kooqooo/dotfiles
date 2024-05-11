@@ -1,5 +1,5 @@
 #!/bin/bash
-EMAIL="youremail@gmail.com"
+EMAIL="koogmlcks@gmail.com"
 NAME="kooqooo"
 
 # Basic Setting
