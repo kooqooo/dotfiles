@@ -13,8 +13,12 @@ sudo apt-get install python3-apt
 sudo apt-get install --reinstall python3-apt
 
 sudo apt install python-is-python3
-# curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-# python$PYTHON_VER get-pip.py
-# rm get-pip.py
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python$PYTHON_VER get-pip.py
+rm get-pip.py
+
+sudo update-alternatives --install /usr/bin/pip pip /usr/local/bin/pip$PYTHON_VER 1
+sudo update-alternatives --config pip
+pip --version
 
 # sudo ln -sf /usr/bin/python$PYTHON_VER /usr/bin/python
