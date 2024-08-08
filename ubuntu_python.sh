@@ -10,7 +10,7 @@ sudo update-alternatives --config python3
 
 sudo apt-get remove python3-apt
 sudo apt-get install python3-apt
-sudo apt-get install --reinstall python3-apt
+sudo apt-get install --reinstall -y python3-apt
 
 sudo apt install python-is-python3
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
