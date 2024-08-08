@@ -2,7 +2,7 @@
 THEME="agnoster"
 # THEME="spaceship"
 sudo apt install -y zsh
-sudo chsh -s /bin/zsh "$USER"
+sudo chsh -s /bin/zsh $USER
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -45,7 +45,5 @@ echo 'alias sz="source ~/.zshrc"' >> ~/.zshrc
 echo 'alias disk="du -h --max-depth=2 --threshold=10M 2>/dev/null / | sort -hr"' >> ~/.zshrc
 source ~/.zshrc
 
-chsh $USERNAME -s /usr/bin/zsh
-echo $SHELL
 # Copy .zshrc
 # cp -rf zshrc/ubuntu ~/.zshrc
