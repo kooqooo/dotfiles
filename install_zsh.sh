@@ -45,7 +45,7 @@ echo 'alias sz="source ~/.zshrc"' >> ~/.zshrc
 echo 'alias disk="du -h --max-depth=2 --threshold=10M 2>/dev/null / | sort -hr"' >> ~/.zshrc
 source ~/.zshrc
 
-chsh -s /usr/bin/zsh
+chsh $USERNAME -s /usr/bin/zsh
 echo $SHELL
 # Copy .zshrc
 # cp -rf zshrc/ubuntu ~/.zshrc
