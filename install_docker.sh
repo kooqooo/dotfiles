@@ -13,8 +13,8 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 # 5. 시스템 패키지 업데이트
 sudo apt-get update
 
-# 6. Docker 설치
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+# 6. Docker, Docker Compose 설치
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
  
 # 7. Docker가 설치 확인
 # 7-1. 도커 실행상태 확인
