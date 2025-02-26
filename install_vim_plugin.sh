@@ -2,6 +2,7 @@ sudo apt update
 sudo apt install nodejs npm
 sudo apt install fzf
 
-# 이후에 vim 켜고
-# :PlugInstall
-# :CocInstall coc-tsserver coc-pyright
+
+echo '이후에 vim 켜고'
+echo ':PlugInstall'
+echo ':CocInstall coc-tsserver coc-pyright'
