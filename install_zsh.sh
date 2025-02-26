@@ -1,7 +1,8 @@
 # Install zsh
 THEME="agnoster"
 # THEME="spaceship"
-sudo apt install -y zsh
+sudo apt update
+sudo apt install -y eza zsh
 sudo chsh -s /bin/zsh $USER
 
 # Install oh-my-zsh
@@ -39,6 +40,7 @@ prompt_end() {
 EOF
 
 # add alias
+echo 'alias ls="eza -lh"' >> ~/.zshrc
 echo 'alias wa="watch -n .2 nvidia-smi"' >> ~/.zshrc
 echo 'alias vz="vim ~/.zshrc"' >> ~/.zshrc
 echo 'alias sz="source ~/.zshrc"' >> ~/.zshrc
