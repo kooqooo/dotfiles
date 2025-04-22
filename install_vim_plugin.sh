@@ -1,7 +1,7 @@
 sudo apt update
-sudo apt install nodejs npm
-sudo apt install fzf
+sudo apt install -y nodejs npm fzf
 
+cp -i .vimrc > ~/
 
 echo '이후에 vim 켜고'
 echo ':PlugInstall'
