@@ -1,21 +1,17 @@
-# 1. 우분투 시스템 패키지 업데이트
+# 우분투에서 APT를 사용하여 설치하는 방법
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 
-# 2. 필요한 패키지 설치
-sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-
-# 3. Docker의 공식 GPG키를 추가
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker-archive.gpg
- 
-# 4. Docker의 공식 apt 저장소를 추가
-echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list 
-
-# 5. 시스템 패키지 업데이트
-sudo apt-get update
-
-# 6. Docker, Docker Compose 설치
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
- 
-# 7. Docker가 설치 확인
-# 7-1. 도커 실행상태 확인
-sudo systemctl status docker
+# Install
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
